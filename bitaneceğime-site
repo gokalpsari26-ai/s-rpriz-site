@@ -55,6 +55,7 @@ button {
     color: white;
     cursor: pointer;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    margin: 8px;
 }
 
 button:hover {
@@ -78,6 +79,11 @@ footer {
 
 <body>
 
+<!-- 🎵 Arka Plan Müziği -->
+<audio id="muzik" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
 <div class="container">
 
     <div class="card">
@@ -87,6 +93,7 @@ footer {
             Bu küçük site sana özel.  
             Çünkü sen hayatıma gelen en güzel şeylerden birisin.
         </p>
+        <button onclick="muzikAc()">🎵 Müziği Aç</button>
     </div>
 
     <div class="card">
@@ -114,6 +121,10 @@ footer {
 <script>
 function goster() {
     document.getElementById("surpriz").style.display = "block";
+}
+
+function muzikAc() {
+    document.getElementById("muzik").play();
 }
 </script>
 
