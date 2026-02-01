@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benim En Güzel Sürprizim</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    background: linear-gradient(180deg, #ffd6e8, #fff);
+    text-align: center;
+    color: #b3005e;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 420px;
+    box-shadow: 0 8px 20px rgba(255,105,180,0.3);
+}
+
+h1 {
+    color: #ff4d94;
+    font-size: 26px;
+}
+
+h2 {
+    color: #ff69b4;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+img {
+    width: 160px;
+    margin: 15px 0;
+}
+
+button {
+    background: #ff69b4;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 22px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background: #ff4d94;
+}
+
+#surpriz {
+    display: none;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #ff1493;
+}
+
+footer {
+    font-size: 13px;
+    color: #aa4a7c;
+    margin-top: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <h1>💗 Canımın En Tatlı Kızı 💗</h1>
+        <img src="https://i.imgur.com/6XGQZ6S.png" alt="Hello Kitty">
+        <p>
+            Bu küçük site sana özel.  
+            Çünkü sen hayatıma gelen en güzel şeylerden birisin.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🎀 Seninle İlgili Küçük Gerçekler</h2>
+        <p>• Gülüşün kalbimi yumuşatıyor</p>
+        <p>• Yanımdayken her şey daha güzel</p>
+        <p>• En sevdiğim anlar seninle olanlar</p>
+    </div>
+
+    <div class="card">
+        <h2>🐱 Küçük Bir Sürpriz</h2>
+        <button onclick="goster()">Buraya Bas 💖</button>
+        <div id="surpriz">
+            Seni çok seviyorum…  
+            İyi ki varsın 💕
+        </div>
+    </div>
+
+    <footer>
+        ❤️ Sadece sana özel hazırlandı
+    </footer>
+
+</div>
+
+<script>
+function goster() {
+    document.getElementById("surpriz").style.display = "block";
+}
+</script>
+
+</body>
+</html>
